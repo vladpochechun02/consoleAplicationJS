@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+
+
+}
+
+.container{
+    max-width: 1140px;
+    display: inline-block;
+    animation: animate .8s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.text{
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+    background-image: linear-gradient(to right top, #ec2323, #ef6600, #e59700, #cdc300, #a8eb12);
+    /* Для того, что б задать бэкграунд тексту */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: left-right 0.5s ease-in-out infinite; */
+    animation-delay: .8s;
+    cursor:pointer;
+    transition: .5s ease-in-out;
+}
+
+.text:hover{
+    animation: none;
+    font-size: 110px;
+    background-image: linear-gradient(45deg, #2f00ff 0%, #FF5ACD 100%);
+}
+
+.text-2{
+    font-size: 120px;
+    display: inline-block;
+    /* animation: jump 0.5s ease-in-out infinite; */
+    animation-delay: .8s;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    /* Для того, что б задать бэкграунд тексту */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor:pointer;
+    transition: .5s ease-in-out;
+}
+
+.text-2:hover{
+    animation: none;
+    font-size: 130px;
+    background-image: linear-gradient(45deg, #FF5ACD  0%, #2f00ff 100%);
+}
+
+@keyframes animate {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes left-right {
+    0% {
+      transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
