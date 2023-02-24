@@ -1,5 +1,27 @@
 'use strict';
 
+const numberOfFilms = +prompt('How many films have you watched?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const lastfilm = prompt('What movie have you watched lately?', ''),
+      gradefilm = prompt('Send grade of this film', ''),
+      lastfilm2 = prompt('What another movie have you watched lately?', ''),
+      gradefilm2 = prompt('Send grade of this film', '');
+
+personalMovieDB.movies[lastfilm] = gradefilm;
+personalMovieDB.movies[lastfilm2] = gradefilm2;
+
+console.log(personalMovieDB);
+
+// console.log(personalMovieDB.count);
+
 // let incr = 10,
 //     decr = 10;
 
