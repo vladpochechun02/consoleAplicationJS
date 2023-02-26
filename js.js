@@ -1,50 +1,70 @@
 'use strict';
 
-const numberOfFilms = +prompt('How many films have you watched?', '');
+// First console Aplication
+// const numberOfFilms = +prompt('How many films have you watched?', '');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-const lastfilm = prompt('What movie have you watched lately?', ''),
-      gradefilm = prompt('Send grade of this film', ''),
-      lastfilm2 = prompt('What another movie have you watched lately?', ''),
-      gradefilm2 = prompt('Send grade of this film', '');
+// const lastfilm = prompt('What movie have you watched lately?', ''),
+//       gradefilm = prompt('Send grade of this film', ''),
+//       lastfilm2 = prompt('What another movie have you watched lately?', ''),
+//       gradefilm2 = prompt('Send grade of this film', '');
 
-personalMovieDB.movies[lastfilm] = gradefilm;
-personalMovieDB.movies[lastfilm2] = gradefilm2;
+// personalMovieDB.movies[lastfilm] = gradefilm;
+// personalMovieDB.movies[lastfilm2] = gradefilm2;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
-// console.log(personalMovieDB.count);
+// const num  = 50;
 
-// let incr = 10,
-//     decr = 10;
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('Too much');
+// } else {
+//     console.log('Right');
+// }
 
-// incr++;
-// decr--;
-// console.log(incr +' ' + decr);
+// (num === 50) ? console.log('Right') : console.log('Error');
 
-// alert('Who are you?');
+// switch (num) {
+//     case 49:
+//         console.log('49');
+//         break;
+//     case 100:
+//         console.log('100');
+//         break; 
+//     case 50:
+//         console.log('50');
+//         break; 
+//     default:
+//         console.log('Not today');
+//         break;
+// }
 
-// const result = confirm('Are you here?');
+// let num = 50;
 
-// const result = prompt('Hoq old are you?', '18');
-// console.log('type: ' + typeof(result) + '\nvalue: ' + result);
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
 
-// const answers = [];
+// do {
+//     console.log(num);
+//     num++; 
+// } while (num < 55);
 
-// answers[0] = prompt('What is your name?', 'Someone');
-// answers[1] = prompt('Hoq old are you?', '18');
-// answers[2] = prompt('Your female?', 'Man');
+// for (let i = 0; i < 10; i++) {
+//     if (i === 6) {
+//         // break;
+//         continue;
+//     }
+//     console.log(i);
+// }
 
-// console.log(answers);
-// document.write(answers);
-
-// const name = prompt('What is your name?', 'Name');
-
-// alert(`Hello ${name} :)`);
